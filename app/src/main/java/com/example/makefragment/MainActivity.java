@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 fragmentManager.beginTransaction()
-                        .replace(R.id.tvfirstfragment,FirstFragment.class,null)
+                        .replace(R.id.fragmentContainerView,FirstFragment.class,null)
                         .setReorderingAllowed(true)
                         .addToBackStack("name")
                         .commit();
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 fragmentManager.beginTransaction()
-                        .replace(R.id.tvsecondfragment,SecondFragment.class,null)
+                        .replace(R.id.fragmentContainerView,SecondFragment.class,null)
                         .setReorderingAllowed(true)
                         .addToBackStack("name")
                         .commit();
